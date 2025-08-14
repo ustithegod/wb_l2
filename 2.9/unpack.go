@@ -12,7 +12,7 @@ func unpackString(s string) (string, error) {
 		return "", nil
 	}
 	var (
-		isEscaped bool = false
+		isEscaped = false
 		buffer    string
 		sb        strings.Builder
 	)
