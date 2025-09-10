@@ -25,6 +25,6 @@ func writeJson(w http.ResponseWriter, status int, data envelope, headers http.He
 	return nil
 }
 
-func errorResponse(w http.ResponseWriter, r *http.Request, status int, message string) {
-	writeJson(w, status, envelope{"error": message}, nil)
+func errorResponse(w http.ResponseWriter, r *http.Request, status int, err error, message string) {
+	writeJson(w, status, envelope{"error": err.Error(), "message": message}, nil)
 }

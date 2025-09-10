@@ -14,9 +14,9 @@ type IEventRepository interface {
 }
 
 type Event struct {
-	ID   uint64
-	Date time.Time
-	Text string
+	ID   uint64    `json:"event_id"`
+	Date time.Time `json:"date"`
+	Text string    `json:"text"`
 }
 
 type User struct {
