@@ -2,7 +2,10 @@ module calendar
 
 go 1.24.6
 
-require github.com/rs/zerolog v1.34.0
+require (
+	github.com/rs/zerolog v1.34.0
+	github.com/sethvargo/go-envconfig v1.3.0
+)
 
 require (
 	github.com/mattn/go-colorable v0.1.13 // indirect
